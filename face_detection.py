@@ -9,11 +9,14 @@ Original file is located at
 
 #Unpickling the data
 import pickle
+import os
 
-with open(r"C:\Users\debas\OneDrive\Desktop\Face Detection\Face_Detectiondev\data\images.p","rb") as f:
+data_dir = os.path.join(os.getcwd(), 'data')
+
+with open(os.path.join(data_dir, "images.p"), "rb") as f:
   images = pickle.load(f)
 
-with open(r"C:\Users\debas\OneDrive\Desktop\Face Detection\Face_Detectiondev\data\labels.p","rb") as f:
+with open(os.path.join(data_dir, "labels.p"), "rb") as f:
   labels = pickle.load(f)
 
 print(images.shape)

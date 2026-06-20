@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Data and Model files (contains personal data)
+data/
+images/*
+!images/.gitkeep
+final_model.h5
+*.h5
+*.p
+
+# IDE
+.vscode/
+.idea/
+.spyproject/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Logs
+*.log
